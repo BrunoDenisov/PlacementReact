@@ -1,21 +1,26 @@
-import React, {useState, useEffect} from "react";
-import './PlacementsTable.css';
-import PlacementInputForm from "./PlacementInputForm";
+import React from "react";
+import PlacementsTableRow from "./PlacementsTableRow";
 
-function PlacmenetsTable(props){
-    return(
+function PlacementsTable({ placements }) {
+    console.log(placements);
+
+    return (
         <div className="placementsTable">
             <table>
-                <tr>
-                    <th>Name</th>
-                    <th>FinishOrder</th>
-                </tr>
-                <tr>
-
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>FinishOrder</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {placements.map((placement, index) => (
+                        <PlacementsTableRow key={index} placement={placement} />
+                    ))}
+                </tbody>
             </table>
         </div>
-    )
+    );
 }
 
-export default PlacmenetsTable;
+export default PlacementsTable;

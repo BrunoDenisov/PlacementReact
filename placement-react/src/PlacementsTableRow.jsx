@@ -1,22 +1,12 @@
-import React, {useState, useEffect} from "react";
-import PlacementInputForm from "./PlacementInputForm";
+import React from "react";
 
-function TableRow(props){
-    
-    const [rowData, setRowData] = useState({});
-
-    const addTableRow = ()=>{
-        const rowInput={
-            name:"",
-            finishOrder:""
-        }
-        setRowData([...rowData, rowInput]);
-    }
-
-    return(
+function PlacementsTableRow({ placement }) {
+    return (
         <tr>
-            {rowData.name}
-            {rowData.finishOrder}
+            <td>{placement.Name}</td>
+            <td>{placement.FinishOrder}</td>
         </tr>
-    )
+    );
 }
+
+export default PlacementsTableRow;
