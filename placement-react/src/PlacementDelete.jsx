@@ -12,7 +12,7 @@ function PlacementDelte(props){
             params: { Id: placementId },
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer znIQnnq5VAuACKCmjNfsAZz-Ct_jI5g7hcIuKCylKod3-scdIDHI5yBmoNm6aL3TLseug3c0IJYgCuIX5_s-dBMRLGKUhjLoxlvx8c6GsKjixbwjrUoaMT86I6r0V1XXa8n6IZGhR6MaOt5_gxIz8_sLg-Pkacm99iTtkrFxhacZKVklAwoKQioVh0JOL9LMO-1FQeJ1Bk6VbCsIK72Ab7qbmVHN-Gxo9NgpWupT6ZOMTZVOgcFhrS2eRJt_k0ZXGQkoQ5Rt_kRHnBmGUjKgbzbZhmSde4NHoYPSQBlec3j03JclRmxtplcXBYSCAXInjqJtZH9x-3tKJk-oNohkpvWflr4JttB7_4pHmB-7DCgZdETciSJ54G8mhaJLe5Qz',
+                'Authorization': 'Bearer EgkYCBI9qVhCjV3l5KOoWWFQRa6zn-v48CKl6ycnRqcIv5aDL7Y21tOXbLWI0kPwpvOfW6NyJp90MCuFzWgzVrPSX5d7gOlZCZD-NmMtq8wK3Ww27OcBqqGuMA5YaCQJ8Cx4p4O6bX6YrvCn422KT_4S6rGDQoskKUhq-3pqfH8gIJaA8X9zlJwcG46CAD0sNHvg7kthT4RJmLzZLaEVu9pH_0Zx7UtCnNnFCIUHheP6RCxqQf8byI-eLoDFYn-VMs7ygQV8kMbfdPpkNs7wksBE_xXRUeYR0mXnnCp0GZTKIBlbQ2_7cGwbLWzvUZpfDtU7kdB9P2ej1mNIEvkHPfh2vTqlDN8LFUds84RhbUj6lUfTzAIqtE5ZY1Bmyw4_',
             }
         })
             .then((response) => {

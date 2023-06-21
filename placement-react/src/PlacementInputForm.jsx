@@ -22,7 +22,7 @@ function PlacementInputForm(props) {
         setPlacement({ Name: "", FinishOrder: "" })
         console.log(placement)
 
-        const response = axios.post('https://localhost:44380/api/Placement', placement, {headers: {'Content-Type':'application/json', 'Authorization':'Bearer 2Ezk99rAMrcZey-vlGXJ3q12bvHcdtBz0QuVrdqeaiuh8KfAMBCQsATwwCCwjhQaaFaUtYj_9TxiI_gzATJ2XWXvDViCym-HaOq18xD2GM37GgSC1Wh7l9ByXOGJ9UZYRA_JTz5VRKJF74-OrX30tJ0LFc6PzRu5ZGhSv2YiIUp2bzauDo4A-sLlF3WBhKkXEAY_kOBxqoKO7seA8kTyYAa-kIGibKK2XjVgk5SI7MJOkRBQEPV-5Q2IWEkrtAMMbY6TyAjy3BApXCGbkOe6tgh0mid1HieXx56SQ2Guvc8w6hyDIRAhmFZhRw2NHB1ddyE-cqXtyPpqUMiusSkilOtVbHPE314eJBjb2JUgcaB8fPFskkY8n1rbwG5J7Nkm'}});
+        const response = axios.post('https://localhost:44380/api/Placement', placement, {headers: {'Content-Type':'application/json', 'Authorization':'Bearer EgkYCBI9qVhCjV3l5KOoWWFQRa6zn-v48CKl6ycnRqcIv5aDL7Y21tOXbLWI0kPwpvOfW6NyJp90MCuFzWgzVrPSX5d7gOlZCZD-NmMtq8wK3Ww27OcBqqGuMA5YaCQJ8Cx4p4O6bX6YrvCn422KT_4S6rGDQoskKUhq-3pqfH8gIJaA8X9zlJwcG46CAD0sNHvg7kthT4RJmLzZLaEVu9pH_0Zx7UtCnNnFCIUHheP6RCxqQf8byI-eLoDFYn-VMs7ygQV8kMbfdPpkNs7wksBE_xXRUeYR0mXnnCp0GZTKIBlbQ2_7cGwbLWzvUZpfDtU7kdB9P2ej1mNIEvkHPfh2vTqlDN8LFUds84RhbUj6lUfTzAIqtE5ZY1Bmyw4_'}});
 
         console.log(response);
     };

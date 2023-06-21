@@ -5,6 +5,7 @@ import PlacementsTable from './PlacementsTable';
 import PlacementGetAll from './PlacementGetAll';
 import PlacementGetById from './PlacementGetById';
 import PlacementDelte from './PlacementDelete';
+import PlacementPut from './PlacementPut';
 
 //Remove stats form PlacementInputForm, PlacementsTable, PlacementsTableRow add them here. Remember to modificy code acordingly.
 //Moraš rposljediid u PlacementInputForm, PlacementsTable, PlacementsTableRow respected objekte i use stateove.
@@ -23,6 +24,7 @@ export default function App() {
       <PlacementGetAll />
       <PlacementGetById />
       <PlacementDelte />
+      <PlacementPut />
     </div>
   );
 }
