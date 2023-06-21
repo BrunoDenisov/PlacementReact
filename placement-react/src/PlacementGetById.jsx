@@ -32,9 +32,10 @@ function PlacementGetById(props) {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="placementId">Id</label>
+                <label htmlFor="placementId">Id:</label>
                 <br />
                 <input type="uuid" name="placementId" id="placementId" value={placementId} onChange={handleChange} />
+                <br />
                 <button type="submit">Get placement by event id</button>
             </form>
         </>

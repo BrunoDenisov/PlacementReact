@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import PlacementInputForm from './PlacementInputForm';
 import PlacementsTable from './PlacementsTable';
 import PlacementGetAll from './PlacementGetAll';
 import PlacementGetById from './PlacementGetById';
+import PlacementDelte from './PlacementDelete';
 
 //Remove stats form PlacementInputForm, PlacementsTable, PlacementsTableRow add them here. Remember to modificy code acordingly.
 //Moraš rposljediid u PlacementInputForm, PlacementsTable, PlacementsTableRow respected objekte i use stateove.
@@ -22,6 +22,7 @@ export default function App() {
       <PlacementsTable placements={placements} />
       <PlacementGetAll />
       <PlacementGetById />
+      <PlacementDelte />
     </div>
   );
 }
