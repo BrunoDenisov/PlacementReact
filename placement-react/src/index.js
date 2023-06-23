@@ -11,6 +11,7 @@ import PlacementDelte from './routes/PlacementDelete';
 import PlacementPut from './routes/PlacementPut';
 import Root from './routes/root';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import PlacementDelete from './routes/PlacementDelete';
 
 const router = createBrowserRouter( [
   {
@@ -20,6 +21,18 @@ const router = createBrowserRouter( [
   {
     path:"/pForm",
     element: <PlacementInputForm />
+  },
+  {
+    path:"/pGetall",
+    element:<PlacementGetAll/>
+  },
+  {
+    path:"/pGetById",
+    element: <PlacementGetById />
+  },
+  {
+    path:"/pDelete",
+    element:<PlacementDelete />
   }
 ])
 

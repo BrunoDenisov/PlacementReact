@@ -12,6 +12,15 @@ class App extends Component {
                         <li>
                             <Link to={'pForm'}>Input Form</Link>
                         </li>
+                        <li>
+                            <Link to={'pGetAll'}>Get all placements</Link>
+                        </li>
+                        <li>
+                            <Link to={'pGetById'}>Get placmenet by event id</Link>
+                        </li>
+                        <li>
+                            <Link to={'pDelete'}>Delete a placement row</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

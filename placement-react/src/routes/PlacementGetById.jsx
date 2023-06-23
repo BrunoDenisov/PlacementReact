@@ -13,7 +13,7 @@ function PlacementGetById(props) {
             params: { eventId: placementId },
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer EgkYCBI9qVhCjV3l5KOoWWFQRa6zn-v48CKl6ycnRqcIv5aDL7Y21tOXbLWI0kPwpvOfW6NyJp90MCuFzWgzVrPSX5d7gOlZCZD-NmMtq8wK3Ww27OcBqqGuMA5YaCQJ8Cx4p4O6bX6YrvCn422KT_4S6rGDQoskKUhq-3pqfH8gIJaA8X9zlJwcG46CAD0sNHvg7kthT4RJmLzZLaEVu9pH_0Zx7UtCnNnFCIUHheP6RCxqQf8byI-eLoDFYn-VMs7ygQV8kMbfdPpkNs7wksBE_xXRUeYR0mXnnCp0GZTKIBlbQ2_7cGwbLWzvUZpfDtU7kdB9P2ej1mNIEvkHPfh2vTqlDN8LFUds84RhbUj6lUfTzAIqtE5ZY1Bmyw4_',
+                'Authorization': 'Bearer FBcipAmCfhp6P4HUASL9X9FjOu0gSSZuBoIeUASHwy-iQm_QnKysE2a04bwt__ezEmH7CyKIiX6vUPZgif609DBEDr6i-0rJ7Vg26kszERU0L1djSFRi2pzXGWkmJ5R6WPhZ9_TuqP1F9CTefW936f50uIaztyzpu5rRbgJjUc8RAh8lbz0gLCwzQRPS8AovC_Utv4VbS9AsP7dQvWBBgYPIqe4kPsEmRrhW4AMx5ctgmAG6Bh_yQgfayw86icy6Dsk4jH6BxbYq7cIjCZfJOOc4HtAOd2Q9qZIy2yPAmLVio9-FGsdTFEWYrN-_6GRoNMUbvRSsoyPY6S9PikGQQPe4c5HFCEIp1jkPWudnUn3rsT8R_TNZFPoEwCXwiT8o',
             }
         })
             .then((response) => {

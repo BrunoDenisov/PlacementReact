@@ -9,7 +9,7 @@ function PlacementGetAll(props){
         event.preventDefault();
         
         axios.get('https://localhost:44380/api/Placement',
-        {headers: {'Content-Type':'application/json', 'Authorization':'Bearer l-EvC_irUnlygn6MlHbAV3j_ozadllp2dfNIXdsZNXPwO51LnuEQd0tkKWREFW5R_mnM5Qbv1HPfA0lFqfaz6sfYnn-qfclBrdHontV-Gm9Uhdb3A-GeOD7I3R6Qt1rSA8BmJ656MPjqaZ2yQXCUacuLVRPl_6pRBxKTLkx_OpW1swb8Mf3-ZCyLLQ94laSZv7S502YWOaKJFQWqDYKxhmzfk_ehtrXdrb0X2wirl-c2maR17RPnnnHDmT1VG3SOg5SSQqKgNADDfAK8xQA48fqrotnkOcH68hiywTB17uhLrcpLdVrKlHDfRU5vjUm2FFwFobwH6incA9_5hthwMtZXEN-tHdujVeszGfNvl1S9QH-oRfNHZ9E4_BY6Mn3y'}
+        {headers: {'Content-Type':'application/json', 'Authorization':'Bearer FBcipAmCfhp6P4HUASL9X9FjOu0gSSZuBoIeUASHwy-iQm_QnKysE2a04bwt__ezEmH7CyKIiX6vUPZgif609DBEDr6i-0rJ7Vg26kszERU0L1djSFRi2pzXGWkmJ5R6WPhZ9_TuqP1F9CTefW936f50uIaztyzpu5rRbgJjUc8RAh8lbz0gLCwzQRPS8AovC_Utv4VbS9AsP7dQvWBBgYPIqe4kPsEmRrhW4AMx5ctgmAG6Bh_yQgfayw86icy6Dsk4jH6BxbYq7cIjCZfJOOc4HtAOd2Q9qZIy2yPAmLVio9-FGsdTFEWYrN-_6GRoNMUbvRSsoyPY6S9PikGQQPe4c5HFCEIp1jkPWudnUn3rsT8R_TNZFPoEwCXwiT8o'}
         })
         .then((response) => {
             console.log(response.data);
