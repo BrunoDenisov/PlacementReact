@@ -1,11 +1,12 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import PlacementInputForm from './PlacementInputForm';
-import PlacementsTable from './PlacementsTable';
-import PlacementGetAll from './PlacementGetAll';
-import PlacementGetById from './PlacementGetById';
-import PlacementDelte from './PlacementDelete';
-import PlacementPut from './PlacementPut';
+import PlacementInputForm from './routes/PlacementInputForm';
+import PlacementsTable from './routes/PlacementsTable';
+import PlacementGetAll from './routes/PlacementGetAll';
+import PlacementGetById from './routes/PlacementGetById';
+import PlacementDelte from './routes/PlacementDelete';
+import PlacementPut from './routes/PlacementPut';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 //Remove stats form PlacementInputForm, PlacementsTable, PlacementsTableRow add them here. Remember to modificy code acordingly.
 //Moraš rposljediid u PlacementInputForm, PlacementsTable, PlacementsTableRow respected objekte i use stateove.
@@ -16,6 +17,13 @@ export default function App() {
   const addPlacement = (newPlacmenet) => {
     setPlacements([...placements, newPlacmenet]);
   }
+
+  const router = createBrowserRouter( [
+    {
+      path:"/",
+      element: <PlacementInputForm />
+    }
+  ])
 
   return (
     <div className="App">

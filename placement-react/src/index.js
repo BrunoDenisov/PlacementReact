@@ -3,11 +3,30 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import PlacementInputForm from './routes/PlacementInputForm';
+import PlacementsTable from './routes/PlacementsTable';
+import PlacementGetAll from './routes/PlacementGetAll';
+import PlacementGetById from './routes/PlacementGetById';
+import PlacementDelte from './routes/PlacementDelete';
+import PlacementPut from './routes/PlacementPut';
+import Root from './routes/root';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+
+const router = createBrowserRouter( [
+  {
+    path:"/",
+    element: <Root />
+  },
+  {
+    path:"/pForm",
+    element: <PlacementInputForm />
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
